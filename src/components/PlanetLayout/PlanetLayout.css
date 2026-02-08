@@ -1,0 +1,47 @@
+.planet__layout {
+   display: grid;
+   grid-template-areas:
+      'tabs'
+      'visual'
+      'content';
+}
+
+.planet__visual {
+   grid-area: visual;
+}
+
+.planet__details {
+   grid-area: content;
+}
+
+.info__tabs {
+   grid-area: tabs;
+}
+
+@media (min-width: 768px) {
+   .planet__layout {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+         'visual visual'
+         'content tabs';
+      align-items: start;
+      column-gap: 3.5rem;
+      row-gap: 1rem;
+   }
+
+   .info__tabs {
+      align-self: center;
+   }
+}
+
+@media (min-width: 1024px) {
+   .planet__layout {
+      grid-template-columns: 1.5fr 0.75fr;
+      grid-template-areas:
+         'visual content'
+         'visual tabs';
+      align-items: start;
+      padding-bottom: 3.5rem;
+      column-gap: 3rem;
+   }
+}

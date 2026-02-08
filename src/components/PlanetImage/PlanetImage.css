@@ -1,0 +1,44 @@
+.planet__visual {
+   position: relative;
+   display: grid;
+   justify-content: center;
+   padding-block: 11rem;
+   width: 100%;
+   height: var(--planet-stage-size);
+}
+
+.planet__image {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: var(--planet-base-size);
+   height: auto;
+   display: block;
+   transform: translate(-50%, -50%) scale(var(--planet-scale));
+}
+
+.planet__geology {
+   width: 100px;
+   height: auto;
+   position: absolute;
+   left: var(--geo-x);
+   top: var(--geo-y);
+   transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+   .planet__visual {
+      padding-block: 17rem;
+   }
+
+   .planet__geology {
+      width: 150px;
+   }
+}
+
+@media (min-width: 1024px) {
+   .planet__visual {
+      padding-top: 45rem;
+      padding-bottom: 0;
+   }
+}

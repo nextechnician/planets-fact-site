@@ -1,0 +1,281 @@
+:root {
+   /* ===================== */
+   /* DESIGN TOKENS */
+   /* ===================== */
+
+   /* Colors */
+   --neutral-950: hsl(0 0% 0%);
+   --neutral-300: hsl(0 0% 85%);
+   --neutral-0: hsl(0 0% 100%);
+
+   --aqua-100: hsl(196 46% 79%);
+   --aqua-50: hsl(196 83% 93%);
+
+   --navy-950: hsl(240 67% 8%);
+   --navy-850: hsl(240, 29%, 18%);
+   --navy-800: hsl(240 17% 27%);
+   --navy-600: hsl(240 6% 54%);
+   --navy-500: hsl(240, 6%, 77%);
+
+   --bronze-700: hsl(30 47% 49%);
+   --orange-600: hsl(10 63% 51%);
+   --blue-600: hsl(222 87% 56%);
+   --purple-600: hsl(263 67% 51%);
+   --red-500: hsl(2 68% 53%);
+   --teal-400: hsl(169 73% 44%);
+   --amber-400: hsl(33 82% 61%);
+   --sky-400: hsl(194 48% 49%);
+
+   /* Typography */
+   /* font family */
+   --ff-primary: 'Antonio', sans-serif;
+   --ff-secondary: 'Spartan', sans-serif;
+
+   /* font size */
+   --fs-80: 5rem;
+   --fs-48: 3rem;
+   --fs-40: 2.5rem;
+   --fs-28: 1.75rem;
+   --fs-24: 1.5rem;
+   --fs-20: 1.25rem;
+   --fs-15: 0.94rem;
+   --fs-14: 0.88rem;
+   --fs-12: 0.75rem;
+   --fs-11: 0.69rem;
+   --fs-9: 0.56rem;
+   --fs-8: 0.5rem;
+
+   /* line height*/
+   --lh-275: 275%;
+   --lh-225: 225%;
+   --lh-210: 210%;
+   --lh-200: 200%;
+   --lh-180: 180%;
+   --lh-165: 165%;
+   --lh-130: 130%;
+
+   /* letter spacing */
+   --tracking-tight-2: -1.5px;
+   --tracking-tight-1: -1px;
+   --tracking-tight-0: -0.75px;
+   --tracking-normal: 0px;
+   --tracking-loose-1: 0.75px;
+   --tracking-loose-2: 1px;
+   --tracking-loose-3: 1.35px;
+   --tracking-loose-4: 2px;
+   --tracking-loose-5: 2.5px;
+
+   /* ===================== */
+   /* SEMANTIC TOKENS */
+   /* ===================== */
+
+   /* Color roles */
+   --clr-bg-page: var(--navy-950);
+
+   --clr-text-primary: var(--neutral-0);
+   --clr-text-secondary: var(--navy-600);
+   --clr-text-muted: var(--navy-500);
+
+   --clr-border-subtle: var(--navy-800);
+   --clr-border-strong: var(--navy-850);
+
+   --clr-planet-mercury: var(--sky-400);
+   --clr-planet-venus: var(--amber-400);
+   --clr-planet-earth: var(--purple-600);
+   --clr-planet-mars: var(--orange-600);
+   --clr-planet-jupiter: var(--red-500);
+   --clr-planet-saturn: var(--bronze-700);
+   --clr-planet-uranus: var(--teal-400);
+   --clr-planet-neptune: var(--blue-600);
+
+   --clr-planet-current: var(--clr-planet-earth);
+   --clr-border-interactive: var(--clr-planet-current);
+   --clr-interactive-active: var(--clr-planet-current);
+
+   [data-planet='Mercury'] {
+      --clr-planet-current: var(--clr-planet-mercury);
+   }
+   [data-planet='Venus'] {
+      --clr-planet-current: var(--clr-planet-venus);
+   }
+   [data-planet='Earth'] {
+      --clr-planet-current: var(--clr-planet-earth);
+   }
+   [data-planet='Mars'] {
+      --clr-planet-current: var(--clr-planet-mars);
+   }
+   [data-planet='Jupiter'] {
+      --clr-planet-current: var(--clr-planet-jupiter);
+   }
+   [data-planet='Saturn'] {
+      --clr-planet-current: var(--clr-planet-saturn);
+   }
+   [data-planet='Uranus'] {
+      --clr-planet-current: var(--clr-planet-uranus);
+   }
+   [data-planet='Neptune'] {
+      --clr-planet-current: var(--clr-planet-neptune);
+   }
+
+   /* Typography roles */
+   --type-ff-heading: var(--ff-primary);
+   --type-ff-body: var(--ff-secondary);
+
+   --type-size-display: var(--fs-80);
+
+   --type-size-h1: var(--fs-48);
+   --type-size-h1-desktop: var(--fs-80);
+
+   --type-size-mobile-logo: var(--fs-28);
+   --type-size-mobile-menu: var(--fs-15);
+
+   --type-size-info-tabs: var(--fs-12);
+
+   --type-size-text-body: var(--fs-14);
+
+   --type-size-stats-heading-mobile: var(--fs-9);
+   --type-size-stats-heading-tablet: var(--fs-8);
+   --type-size-stats-heading-desktop: var(--fs-11);
+
+   /* Planet scale */
+   --planet-base-size: 11.25rem;
+   --planet-stage-size: 14rem;
+   --geo-x: 50.5%;
+   --geo-y: 79%;
+
+   [data-planet='Mercury'] {
+      --planet-scale: 0.8;
+      --geo-x: 50.2%;
+      --geo-y: 78%;
+   }
+
+   [data-planet='Venus'] {
+      --planet-scale: 1.1;
+      --geo-x: 50.2%;
+      --geo-y: 78%;
+   }
+
+   [data-planet='Earth'] {
+      --planet-scale: 1.2;
+      --geo-x: 50.2%;
+      --geo-y: 78%;
+   }
+
+   [data-planet='Mars'] {
+      --planet-scale: 0.9;
+      --geo-x: 50.5%;
+      --geo-y: 77.5%;
+   }
+
+   [data-planet='Jupiter'] {
+      --planet-scale: 1.5;
+      --geo-x: 50%;
+      --geo-y: 77%;
+   }
+
+   [data-planet='Saturn'] {
+      --planet-scale: 1.7;
+      --geo-x: 50%;
+      --geo-y: 77%;
+   }
+
+   [data-planet='Uranus'] {
+      --planet-scale: 1.2;
+      --geo-x: 50.2%;
+      --geo-y: 77%;
+   }
+
+   [data-planet='Neptune'] {
+      --planet-scale: 1.2;
+      --geo-x: 50.2%;
+      --geo-y: 77%;
+   }
+
+   @media (min-width: 768px) {
+      --planet-base-size: 18rem;
+
+      [data-planet='Mercury'] {
+         --planet-scale: 0.8;
+         --geo-y: 78.5%;
+      }
+
+      [data-planet='Venus'] {
+         --planet-scale: 1.1;
+         --geo-y: 78.5%;
+      }
+
+      [data-planet='Earth'] {
+         --planet-scale: 1.2;
+         --geo-y: 78%;
+      }
+
+      [data-planet='Mars'] {
+         --planet-scale: 0.9;
+         --geo-y: 77.5%;
+      }
+
+      [data-planet='Jupiter'] {
+         --planet-scale: 1.5;
+         --geo-y: 78%;
+      }
+
+      [data-planet='Saturn'] {
+         --planet-scale: 1.7;
+         --geo-y: 78%;
+      }
+
+      [data-planet='Uranus'] {
+         --planet-scale: 1.2;
+         --geo-y: 78%;
+      }
+
+      [data-planet='Neptune'] {
+         --planet-scale: 1.2;
+         --geo-y: 78%;
+      }
+   }
+
+   @media (min-width: 1024px) {
+      --planet-base-size: 23rem;
+
+      [data-planet='Mercury'] {
+         --planet-scale: 0.8;
+         --geo-y: 74%;
+      }
+
+      [data-planet='Venus'] {
+         --planet-scale: 1.1;
+         --geo-y: 78.5%;
+      }
+
+      [data-planet='Earth'] {
+         --planet-scale: 1.2;
+         --geo-y: 78%;
+      }
+
+      [data-planet='Mars'] {
+         --planet-scale: 0.9;
+         --geo-y: 77.5%;
+      }
+
+      [data-planet='Jupiter'] {
+         --planet-scale: 1.5;
+         --geo-y: 78%;
+      }
+
+      [data-planet='Saturn'] {
+         --planet-scale: 1.7;
+         --geo-y: 78%;
+      }
+
+      [data-planet='Uranus'] {
+         --planet-scale: 1.2;
+         --geo-y: 78%;
+      }
+
+      [data-planet='Neptune'] {
+         --planet-scale: 1.2;
+         --geo-y: 78%;
+      }
+   }
+}

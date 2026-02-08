@@ -1,0 +1,28 @@
+[data-planet] {
+   min-height: 100vh;
+}
+
+.page {
+   display: grid;
+   max-width: 2560px;
+   margin-inline: auto;
+   padding-inline: 1.5rem;
+}
+
+.planet__container {
+   display: grid;
+}
+
+/* TABLET LAYOUT */
+@media (min-width: 768px) {
+   .page {
+      padding-inline: 2.5rem;
+   }
+}
+
+/* DESKTOP LAYOUT */
+@media (min-width: 1024px) {
+   .page {
+      padding-inline: 10rem;
+   }
+}

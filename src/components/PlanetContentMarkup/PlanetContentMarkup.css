@@ -1,0 +1,84 @@
+.planet__details {
+   text-align: center;
+}
+
+.planet__name {
+   font-size: var(--type-size-h1);
+   font-weight: 400;
+   line-height: var(--lh-130);
+   letter-spacing: var(--tracking-normal);
+   color: var(--clr-text-primary);
+   text-transform: uppercase;
+   padding-bottom: 1.5rem;
+   padding-top: 1rem;
+   margin: 0;
+}
+
+.planet__description {
+   font-family: var(--ff-secondary);
+   font-size: var(--type-size-text-body);
+   font-weight: 400;
+   line-height: var(--lh-180);
+   letter-spacing: var(--tracking-normal);
+   color: var(--clr-text-primary);
+   padding-bottom: 1rem;
+   min-height: clamp(11rem, 22vw, 13.5rem);
+}
+
+.planet__source {
+   font-family: var(--ff-secondary);
+   color: var(--clr-text-secondary);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   padding-bottom: 2rem;
+}
+
+.planet__source a {
+   color: var(--clr-text-secondary);
+   font-weight: 700;
+}
+
+.planet__source-icon {
+   width: 16px;
+   height: auto;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+   .planet__name,
+   .planet__details {
+      text-align: left;
+   }
+
+   .planet__description {
+      padding: 0;
+   }
+
+   .planet__source {
+      justify-content: left;
+   }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+   .planet__name {
+      font-size: var(--type-size-h1-desktop);
+      line-height: var(--lh-130);
+      letter-spacing: var(--tracking-normal);
+   }
+
+   .planet__details {
+      padding-top: 6rem;
+   }
+
+   .planet__description {
+      min-height: clamp(10rem, 22vw, 11rem);
+      padding-bottom: 2rem;
+   }
+
+   .planet__source {
+      padding-bottom: 1.5rem;
+   }
+}
