@@ -53,6 +53,7 @@
    }
 
    .planet__description {
+      min-height: clamp(11rem, 22vw, 11rem);
       padding: 0;
    }
 
@@ -62,7 +63,7 @@
 }
 
 /* DESKTOP */
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
    .planet__name {
       font-size: var(--type-size-h1-desktop);
       line-height: var(--lh-130);
@@ -74,7 +75,7 @@
    }
 
    .planet__description {
-      min-height: clamp(10rem, 22vw, 11rem);
+      min-height: clamp(10rem, 100vw, 13rem);
       padding-bottom: 2rem;
    }
 

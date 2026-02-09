@@ -21,8 +21,9 @@
 }
 
 /* DESKTOP LAYOUT */
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
    .page {
       padding-inline: 10rem;
+      min-height: 100vh;
    }
 }

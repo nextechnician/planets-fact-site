@@ -235,7 +235,7 @@
       }
    }
 
-   @media (min-width: 1024px) {
+   @media (min-width: 1250px) {
       --planet-base-size: 23rem;
 
       [data-planet='Mercury'] {
@@ -245,37 +245,37 @@
 
       [data-planet='Venus'] {
          --planet-scale: 1.1;
-         --geo-y: 78.5%;
+         --geo-y: 74%;
       }
 
       [data-planet='Earth'] {
          --planet-scale: 1.2;
-         --geo-y: 78%;
+         --geo-y: 74%;
       }
 
       [data-planet='Mars'] {
          --planet-scale: 0.9;
-         --geo-y: 77.5%;
+         --geo-y: 74%;
       }
 
       [data-planet='Jupiter'] {
          --planet-scale: 1.5;
-         --geo-y: 78%;
+         --geo-y: 73.5%;
       }
 
       [data-planet='Saturn'] {
          --planet-scale: 1.7;
-         --geo-y: 78%;
+         --geo-y: 71%;
       }
 
       [data-planet='Uranus'] {
          --planet-scale: 1.2;
-         --geo-y: 78%;
+         --geo-y: 74%;
       }
 
       [data-planet='Neptune'] {
          --planet-scale: 1.2;
-         --geo-y: 78%;
+         --geo-y: 74%;
       }
    }
 }

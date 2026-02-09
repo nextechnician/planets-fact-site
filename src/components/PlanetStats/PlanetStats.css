@@ -39,6 +39,10 @@ dd {
 
 /* TABLET */
 @media (min-width: 768px) {
+   .planet__stats {
+      padding-bottom: 2rem;
+   }
+
    .planet__stats dl {
       grid-template-columns: repeat(4, 1fr);
       gap: 0.75rem;
@@ -57,18 +61,19 @@ dd {
    }
 }
 
-/* DESKTOP */
-.planet__stats dl > div {
-   padding: 1.5rem;
-}
+@media (min-width: 1250px) {
+   .planet__stats dl > div {
+      padding: 1.5rem;
+   }
 
-.planet__stats dd {
-   font-size: var(--fs-40);
-   letter-spacing: var(--tracking-tight-2);
-}
+   .planet__stats dd {
+      font-size: var(--fs-40);
+      letter-spacing: var(--tracking-tight-2);
+   }
 
-.planet__stats dt {
-   font-size: var(--type-size-stats-heading-desktop);
-   line-height: var(--lh-225);
-   letter-spacing: var(--tracking-loose-2);
+   .planet__stats dt {
+      font-size: var(--type-size-stats-heading-desktop);
+      line-height: var(--lh-225);
+      letter-spacing: var(--tracking-loose-2);
+   }
 }

@@ -1,0 +1,12 @@
+@keyframes stars-drift {
+   from {
+      background-position: 0 0;
+   }
+   to {
+      background-position: 600px 600px;
+   }
+}
+
+body {
+   animation: stars-drift 60s linear infinite;
+}

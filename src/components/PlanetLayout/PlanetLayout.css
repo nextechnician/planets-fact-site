@@ -34,7 +34,7 @@
    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1250px) {
    .planet__layout {
       grid-template-columns: 1.5fr 0.75fr;
       grid-template-areas:

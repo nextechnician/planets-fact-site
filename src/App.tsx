@@ -8,6 +8,7 @@ import { Header } from './components/Header/Header';
 import { MobileMenu } from './components/MobileMenu/MobileMenu';
 import { PlanetLayout } from './components/PlanetLayout/PlanetLayout.tsx';
 import { PlanetStats } from './components/PlanetStats/PlanetStats';
+import './animations/stars.css';
 
 const planets = planetsData as Planet[];
 
